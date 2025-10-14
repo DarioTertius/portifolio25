@@ -3,51 +3,141 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Conversor de Moedas para Real (BRL)</title>
+    <title>Portfólio - Desenvolvedor Web</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <a href="https://dariotertius.github.io/portifolio25/#contato">
-          <img src="logo.png" alt="logo" /><br /><br />
-        </a>
-        <h1>Conversor de Moedas para Real (BRL) R$</h1>
-        <p>Descubra quantos Reais uma quantia em outra moeda vale hoje.</p>
-      </header>
+    <!-- Header -->
+    <header>
+      <nav class="navbar">
+        <img src="logo.png" alt="" srcset="" />
+        <ul class="nav-links">
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <main>
-        <form id="converter-form" class="converter-form">
-          <div class="form-group">
-            <label for="amount">Quantia</label>
-            <input
-              type="number"
-              id="amount-input"
-              value="100"
-              min="0"
-              step="0.01"
-              required
-            />
+    <!-- Seção Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Olá, eu sou <span>Dário Moreira</span>!</h2>
+        <h3>
+          Desenvolvedor Web <br />
+          Estou aqui para ajudar o seu negócio a chegar a lugares ainda não
+          explorados!
+        </h3>
+
+        <a
+          href="https://wa.me/859990321766?text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os."
+          class="btn"
+          >Fale comigo!</a
+        >
+      </div>
+      <div class="hero-image">
+        <img
+          src="fotosite.JPG"
+          alt="Banner do portfólio"
+          style="border-radius: 11%"
+        />
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="about">
+      <h1>Serviços</h1>
+
+      <div class="three-d-container">
+        <div class="box-card" aria-hidden="false">
+          <div class="face front">Web Page</div>
+          <div class="face back">Leads</div>
+          <div class="face right">Cadastros</div>
+          <div class="face left">E-Commerce</div>
+          <div class="face top">Blogs</div>
+          <div class="face bottom">APPs</div>
+        </div>
+      </div>
+
+      <div>
+        <div id="container">
+          Faça!
+          <div id="flip">
+            <div><div>com</div></div>
+            <div><div>Todo!</div></div>
+            <div><div>Mundo!</div></div>
           </div>
-          <div class="form-group">
-            <label for="currency">Moeda</label>
-            <select id="currency-select" required>
-              <option value="">Carregando moedas...</option>
-            </select>
-          </div>
-          <button type="submit">Converter</button>
-        </form>
+          Negócio!
+        </div>
+      </div>
+    </section>
+    <!-- Projetos -->
+    <section id="projetos" class="projetos">
+      <h1>Projetos</h1>
+      <div class="grid">
+        <div class="card">
+          <h4>Studio DharaY</h4>
+          <p>
+            Studio de beleza, página de agendamentos com link para WhatssApp.
+          </p>
+          <a
+            href="https://dariotertius.github.io/studiodharay/?fbclid=PAZXh0bgNhZW0CMTEAAaf8jtTvbhZCvfszb3iBCkjwEjG2_9ar9KUXKKm_-ZDYRNIQumlWbmVwx2TqBQ_aem_bwW9awF2NXaZoLkZO43HYQ"
+            target="_blank"
+            >Ver mais</a
+          >
+        </div>
+        <div class="card">
+          <h4>NLW 2023</h4>
+          <p>
+            Projeto desenvolvido no NWL com links para os streamers que costumo
+            assistir.
+          </p>
+          <a
+            href="https://dariotertius.github.io/nlw-esports-explorer/"
+            target="_blank"
+            >Ver mais</a
+          >
+        </div>
+        <div class="card">
+          <h4>Relógio e Clima Local</h4>
+          <p>Projeto de relógio que consome API de clima e localização.</p>
+          <a
+            href="https://dariotertius.github.io/relogioeclimelocal/"
+            target="_blank"
+            >Ver mais</a
+          >
+        </div>
+      </div>
+    </section>
 
-        <div id="result-container" class="result-container"></div>
-      </main>
+    <!-- Contato -->
+    <section id="contato" class="contato">
+      <h1>Contato</h1>
+      <form
+        action="https://formsubmit.co/dariomoreraneto@gmail.com"
+        method="POST"
+      >
+        <input type="text" name="nome" placeholder="Seu nome" required />
+        <input type="email" name="email" placeholder="Seu e-mail" required />
+        <textarea
+          name="mensagem"
+          placeholder="Sua mensagem"
+          required
+        ></textarea>
 
-      <footer>
-        <p class="update-time">
-          Última atualização das cotações: <strong id="last-update">...</strong>
-        </p>
-      </footer>
-    </div>
+        <!-- Configurações extras -->
+        <input
+          type="hidden"
+          name="_next"
+          value="https://DarioTertius.github.io/portifolio25/obrigado.html"
+        />
+        <input type="hidden" name="_captcha" value="false" />
 
-    <script src="script.js"></script>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2025 Dário Moreira - Desenvolvedor Web</p>
+    </footer>
   </body>
 </html>
